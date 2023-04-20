@@ -1,5 +1,6 @@
 # Clima-tempo
 
+<<<<<<< HEAD
 <p>
     Este projeto é uma busca de dados do tempo da cidade na qual você <br>
     insirir, tem controle de Login, conexão ao banco NoSQl Mongo e criptografia de senha <br>
@@ -16,3 +17,5 @@
 </div>
 
 # Projeto ainda nao finalizado !!
+=======
+>>>>>>> dd262f82b2efbf0d5e2b0c5e2edff96eb6dad573
