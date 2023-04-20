@@ -1,3 +1,6 @@
+const dotenv = require('dotenv').config();
+const key = process.env.KEY_APIForClime;
+
 let input           = document.getElementById('input');
 let nameCity        = document.getElementById('nameCity');
 let img             = document.getElementById('iconClima');
@@ -10,10 +13,10 @@ let country         = document.getElementById('nameContry');
 
 const loader        = document.getElementById('conteinerLoader')
 /*-==-=-=-=-=-=--==Animação da pagina=-=-=-=-=-=-=-=-=-=-=-=-=*/
-let conteinerInfoTempo = document.getElementById('infoTempoConteiner');
-let conteinerInfo = document.getElementById('conteiterInfo');
-let titleNameCity = document.getElementById('nameCity'); 
-let conteinerIMG = document.getElementById('conteinerIMG');
+let conteinerInfoTempo  = document.getElementById('infoTempoConteiner');
+let conteinerInfo       = document.getElementById('conteiterInfo');
+let titleNameCity       = document.getElementById('nameCity'); 
+let conteinerIMG        = document.getElementById('conteinerIMG');
 
 document.body.addEventListener('click', ()=>{
     if(input.value == false){
@@ -34,7 +37,6 @@ document.body.addEventListener('click', ()=>{
 
 async function getDate(){
     try{
-        const key = '64e186beae52ae51be63f0866a18b787';
         let linkApi = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${key}`;
         await fetch(linkApi)
         .then((response) => response.json())
@@ -58,13 +60,13 @@ async function getDate(){
             let LinkAPIIMG = `https://openweathermap.org/img/wn/${codImg}@2x.png`;
             img.setAttribute('src', LinkAPIIMG);
 
-            nameCity.innerText = input.value;
-            temperatura.innerText = `${temp} ºC`
-            humidade.innerText = `${humidity}%`
-            description.innerText = descri
-            SpeedWind.innerText = `${Wind} m/s`;
+            nameCity.innerText      = input.value;
+            temperatura.innerText   = `${temp} ºC`
+            humidade.innerText      = `${humidity}%`
+            description.innerText   = descri
+            SpeedWind.innerText     = `${Wind} m/s`;
 
-            country.innerText = pais;
+            country.innerText       = pais;
         });
     }
     
