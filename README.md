@@ -10,9 +10,24 @@
 
 
 <div>
-    <h3>Pacotes utilizados</h3>
+    <h3>Pacotes npm utilizados</h3>
     <ul>
         <li>mongoose</li>
+    </ul>
+</div>
+<br>
+<div>
+    <h3>Fremeowrks</h3>
+    <ul>
+        <li>Bootstrap</li>
+    </ul>
+</div>
+
+<div>
+    <h3>Ferramenta(s) utilizada(s)</h3>
+    <ul>
+        <li>Freepik</li>
+        <li>Editor de video wevideo.com</li>
     </ul>
 </div>
 
