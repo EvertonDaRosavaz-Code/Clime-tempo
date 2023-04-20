@@ -1,0 +1,14 @@
+{
+  "name": "project-tempo",
+  "version": "1.0.0",
+  "description": "Clima-tempo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Everton da Rosa Vaz",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.0.4"
+  }
+}
