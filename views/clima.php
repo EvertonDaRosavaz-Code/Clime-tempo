@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="../css/tempo.css">
         <title>Tempo</title>
     </head>
+<?php
+
+/*include getSession*/
+include('../controller/getSessino.php');
+
+?>
+
     <body>
         <header>
             <div class="conteiner">
@@ -20,13 +27,12 @@
             <div class="conteinerUser">
                 <span><i class="bi bi-person"></i></span>
                 <span> Hello, user</span>
+                <a href="../controller/endSession.php">Sair</a>
             </div>
         </header>
 
        
         <section>
-        
-
             <div class="conteiner" id="infoTempoConteiner">
                 <!--Loader-->
                     <div class="conteinerLoader" id="conteinerLoader"> 
@@ -56,22 +62,22 @@
 
                     <div class="descricaoTemperatura Weather">
                         <span><i class="bi bi-cloud"></i></span>
-                        <h4 id="nameDescription">overcast cloudss</h4>
+                        <h4 id="nameDescription"></h4>
                     </div>
 
                     <div class="VelodoVento Weather">
                         <span><i class="bi bi-wind"></i></span>
-                        <h4 id="nameSpeedWind">5Km</h4>
+                        <h4 id="nameSpeedWind"></h4>
                     </div>
 
                     <div class="Dayofweek Weather">
                         <span><i class="bi bi-calendar"></i></span>
-                        <h4 id="DayofWeek" >Dia da semana</h4>
+                        <h4 id="DayofWeek" ></h4>
                     </div>
 
                     <div class="pais Weather">
                         <span><i class="bi bi-geo-alt"></i></span>
-                        <h4 id="nameContry">Contry</h4>
+                        <h4 id="nameContry"></h4>
                     </div>
                 </div>
             </div>

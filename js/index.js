@@ -1,6 +1,3 @@
-const dotenv = require('dotenv').config();
-const key = process.env.KEY_APIForClime;
-
 let input           = document.getElementById('input');
 let nameCity        = document.getElementById('nameCity');
 let img             = document.getElementById('iconClima');
@@ -37,6 +34,7 @@ document.body.addEventListener('click', ()=>{
 
 async function getDate(){
     try{
+        let key = '64e186beae52ae51be63f0866a18b787'
         let linkApi = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${key}`;
         await fetch(linkApi)
         .then((response) => response.json())
@@ -53,7 +51,7 @@ async function getDate(){
             let pais            = data['sys']['country'];
 
             if(400 >= cod <= 503 && cod != 200){
-                location.href = `../views/error.html?cod=${cod}`
+                location.href = `../views/error.php?cod=${cod}`
             }
 
            

@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
         <title>Login-in</title>
     </head>
+    <?php 
+        if(isset($_POST['submit'])){
+            header('location:controller/newSession.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha']);
+        }
+
+    ?>
+
     <body>
 
         <div class="video-background">
@@ -25,16 +32,20 @@
                 </div>
 
                 <hr>
-                <label for="nome">Nome</label>
-                <input  type="text" required placeholder="Seu nome completo" id="nome" name="nome">
+                <label for="nome">Name</label>
+                <input  type="text" required placeholder="Your name " id="nome" name="nome">
                 
                 <label for="email">Email</label>
-                <input type="email" placeholder="Seu melhor email" name="email" id="email">
+                <input type="email" required placeholder="Your best Email" name="email" id="email">
                 
-                <label for="senha">Senha</label>
-                <input type="password" placeholder="Sua melhor senha"  required id="senha" name="senha">
+                <label for="senha">Password</label>
+                <input type="password" placeholder="Password"  required id="senha" name="senha">
                 
-                <input type="submit" value="Entrar" >
+                <div class="social-media">
+
+                </div>
+                <a href="views/login-up.php">Create account</a>
+                <input type="submit" value="Entrar" name="submit" >
             </form>
         </div>
     </body>

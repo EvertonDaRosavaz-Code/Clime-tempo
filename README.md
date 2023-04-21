@@ -31,6 +31,9 @@
     </ul>
 </div>
 
+<p>Não há responsividade para telas menores que 672px de largura !</p>
+<p>O foco do projeto, não é o front-end e sim seu Beck!</p>
+
 # Projeto ainda nao finalizado !!
 
 
