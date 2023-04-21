@@ -13,6 +13,8 @@
         <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     </head>
    
+
+
     <body>
 
         <div class="video-background">
@@ -21,7 +23,7 @@
            </video>
 
             <form class=formLogin method="post" >
-                <h3>Create acoont</h3>
+                <h3>Create acoont teste</h3>
 
                 <div class="conteiner-iconUser">
                    <img src="img/user.png" alt="icon-user">
