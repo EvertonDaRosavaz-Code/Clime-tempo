@@ -44,7 +44,7 @@
                 <div class="social-media">
 
                 </div>
-                <a href="views/login.html">Login</a>
+                <a href="views/login.php">Login</a>
                 <input type="submit" value="Entrar" id = "inBtn" name="submit">
                 <div id="buttonDiv"></div> 
             </form>
