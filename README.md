@@ -4,8 +4,9 @@
 <p>
     Este projeto é uma busca de dados do tempo da cidade na qual você <br>
     insirir, tem controle de Login, conexão ao banco NoSQl Mongo e criptografia de senha <br>
+    Tratamento de erro de solicitação a API e de conexão com a internet. <br>
 
-    Tratamento de erro de solicitação a API e de conexão com a internet.
+    Também a cadastro com o Google !
 </p>
 
 
