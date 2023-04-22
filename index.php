@@ -13,7 +13,11 @@
         <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     </head>
    
-
+    <?php
+        if(isset($_POST['submit'])){
+            header('location: ./API/createUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha'].'&confirmSenha='.$_POST['Confimsenha'] );            
+        }
+    ?>
 
     <body>
 
@@ -23,7 +27,7 @@
            </video>
 
             <form class=formLogin method="post" >
-                <h3>Create acoont teste</h3>
+                <h3>Create acoont </h3>
 
                 <div class="conteiner-iconUser">
                    <img src="img/user.png" alt="icon-user">
@@ -41,15 +45,24 @@
                 <label for="senha">Confirm Password</label>
                 <input type="password" placeholder="Confirm Password"  required id="Confirmsenha" name="Confimsenha">
                 
-                <div class="social-media">
-
-                </div>
                 <a href="views/login.php">Login</a>
                 <input type="submit" value="Entrar" id = "inBtn" name="submit">
                 <div id="buttonDiv"></div> 
             </form>
         </div>
         <script src="js/google.js"></script>
+        
+        <script>
+            let senha = document.getElementById('senha');
+            let confirmSenha = document.getElementById('Confirmsenha');
+
+            document.getElementById('inBtn').addEventListener('click', ()=>{
+                if(senha.value != confirmSenha.value){
+                    alert('As senhas não corespondem !');
+                }
+            });
+
+        </script>
     </body>
    
 </html>

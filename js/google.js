@@ -1,6 +1,9 @@
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential);
-    console.log(data);
+    let 
+
+    
+
   }
   window.onload = function () {
     google.accounts.id.initialize({
@@ -10,12 +13,12 @@ function handleCredentialResponse(response) {
     google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
       {
-         theme: "standard",
-        size: "large",
-        type : "standard",
-        shape :"pill",
-        text :"continue_with.",
-        logo_alignment : "left"
+          theme: "standard",
+          size: "large",
+          type : "standard",
+          shape :"pill",
+          text :"continue_with.",
+          logo_alignment : "left"
         
         }  
     );

@@ -14,7 +14,7 @@
 <?php
 
 /*include getSession*/
-include('../controller/getSessino.php');
+//include('../controller/getSessino.php');
 
 ?>
 
@@ -84,6 +84,6 @@ include('../controller/getSessino.php');
             </div>
         </section>
     </body>
-    <script src="../js/index.js"></script>
+    <script src="../js/clima.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
