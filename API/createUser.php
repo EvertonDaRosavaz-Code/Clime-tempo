@@ -2,8 +2,15 @@
 
 $Getnome          = $_GET['nome'];
 $Getemail         = $_GET['email'];
+
 $Getsenha         = $_GET['senha'];
 $GetconfirmSenha  = $_GET['confirmSenha'];
+
+if(empty($Getsenha) && empty($GetconfirmSenha)){
+    header('location: ../index.php?nome='.$_GET['nome'].'&email='.$_GET['email']);
+}
+
+
 
 function createUserMongo($nome, $email, $senha){
     $curl = curl_init();
@@ -35,7 +42,7 @@ function createUserMongo($nome, $email, $senha){
   if ($err) {
     echo "cURL Error #:" . $err;
   } else {
-    header('location: ../controller/newSession.php');
+    header('location: ../controller/newSession.php?nome='.$_GET['nome']);
   }
 }
 

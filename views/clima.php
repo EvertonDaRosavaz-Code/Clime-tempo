@@ -14,8 +14,9 @@
 <?php
 
 /*include getSession*/
-//include('../controller/getSessino.php');
+include('../controller/getSessino.php');
 
+//var_dump($_SESSION);
 ?>
 
     <body>
@@ -27,7 +28,7 @@
 
             <div class="conteinerUser">
                 <span><i class="bi bi-person"></i></span>
-                <span> Hello, user</span>
+                <span> Hello, <?php echo $_SESSION['nome'] ?> </span>
                 <a href="../controller/endSession.php">Sair</a>
             </div>
         </header>

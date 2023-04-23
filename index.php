@@ -17,6 +17,16 @@
         if(isset($_POST['submit'])){
             header('location: ./API/createUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha'].'&confirmSenha='.$_POST['Confimsenha'] );            
         }
+
+        if(isset($_GET['googlenome']) && isset($_GET['googleemail'])){
+            $nomeGoogle  = $_GET['googlenome'];
+            $emailGoogle = $_GET['googleemail']; 
+            
+            echo "<script>alert('Só nos confirme uma senha, por segurança')</script>";
+        }
+       
+
+   
     ?>
 
     <body>
@@ -34,10 +44,10 @@
                 </div>
                 <hr>
                 <label for="nome">Name</label>
-                <input  type="text" required placeholder="Your name " id="nome" name="nome">
+                <input  type="text" required placeholder="Your name " id="nome" name="nome" value="<?php echo $nomeGoogle ?? '' ?>">
                 
                 <label for="email">Email</label>
-                <input type="email" placeholder="Your best Email" name="email" id="email">
+                <input type="email" placeholder="Your best Email" name="email" id="email" value=" <?php echo $emailGoogle ?? ''  ?>">
                 
                 <label for="senha">Password</label>
                 <input type="password" placeholder="Password"  required id="senha" name="senha">
@@ -46,7 +56,7 @@
                 <input type="password" placeholder="Confirm Password"  required id="Confirmsenha" name="Confimsenha">
                 
                 <a href="views/login.php">Login</a>
-                <input type="submit" value="Entrar" id = "inBtn" name="submit">
+                <input type="submit" value="Register" id = "inBtn" name="submit">
                 <div id="buttonDiv"></div> 
             </form>
         </div>
@@ -58,11 +68,12 @@
 
             document.getElementById('inBtn').addEventListener('click', ()=>{
                 if(senha.value != confirmSenha.value){
-                    alert('As senhas não corespondem !');
+                   alert('As senhas não correspondem');
                 }
             });
 
         </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
    
 </html>

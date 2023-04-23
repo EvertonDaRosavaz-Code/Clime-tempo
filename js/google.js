@@ -1,8 +1,15 @@
-let KeyGoogle  = ''
+const KeyGoogle  = ''
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential);
-    
-    
+    console.log(data);
+    let nome    = data.name;
+    let email   = data.email;
+    let picture = data.picture;
+
+    location.href = `index.php?googlenome=${nome}&googleemail=${email}`;
+
+   
+
 
   }
   window.onload = function () {
@@ -24,3 +31,4 @@ function handleCredentialResponse(response) {
     );
     google.accounts.id.prompt(); 
   }
+ 
