@@ -34,7 +34,7 @@ document.body.addEventListener('click', ()=>{
 
 async function getDate(){
     try{
-        let key = '64e186beae52ae51be63f0866a18b787'
+        let key = ''
         let linkApi = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${key}`;
         await fetch(linkApi)
         .then((response) => response.json())
