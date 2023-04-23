@@ -1,13 +1,13 @@
+let KeyGoogle  = ''
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential);
     
-
     
 
   }
   window.onload = function () {
     google.accounts.id.initialize({
-      client_id: "",
+      client_id: KeyGoogle,
       callback: handleCredentialResponse
     });
     google.accounts.id.renderButton(
