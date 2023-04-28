@@ -1,4 +1,4 @@
-const KeyGoogle  = '786161790730-dug2vu5em07a2tkj9htaebu9v9sqjhbd.apps.googleusercontent.com'
+const KeyGoogle  = ''
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential);
     console.log(data);
