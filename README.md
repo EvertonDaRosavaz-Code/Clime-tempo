@@ -32,6 +32,14 @@
     </ul>
 </div>
 
+<div>
+    <h3>APIs</h3>
+    <ul>
+        <li>OpenCage Geocoder API</li>
+        <li>Openweathermap</li>
+    </ul>
+</div>
+
 <p>Não há responsividade para telas menores que 672px de largura !</p>
 <p>O foco do projeto, não é o front-end e sim seu Back!</p>
 

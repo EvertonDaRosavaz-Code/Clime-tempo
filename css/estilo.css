@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 5px;
+    
+    background: #1ABF9C;
+}
+
+
+header {
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 1000px;
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  
+  nav {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin: 5px;
+    border: solid 1px;
+    border-radius: 3px;
+    padding: 5px;
+
+  }
+  
+  .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .user span{
+    font-size: 20pt;
+    
+  }
+
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+
+    nav a:last-of-type {
+      margin-right: 0;
+    }
+
+    
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    header {
+      width: 90%;
+      max-width: 400px;
+    }
+    
+    nav {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+
+.time{
+    border:  solid 1px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.main {
+    border: solid 1px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 5%;
+    transform: translateY(-1px);
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: solid 2px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    max-width: 400px;
+    height: 35px;
+    padding: 2%;
+    border-radius: 5px;
+    border: solid 1px;
+    
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+  }
+  
+  input[type="button"] {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    background: #191818;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  input[type="submit"]:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  @media screen and (max-width: 768px) {
+    .main {
+      width: 90%;
+      max-width: 400px;
+    }
+    
+    input[type="button"] {
+      width: 80%;
+      max-width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    input[type="text"] {
+      width: 80%;
+      max-width: 200px;
+    }
+    
+    input[type="button"] {
+      width: 90%;
+      max-width: 200px;
+    }
+  }
+
+.info{
+    border: solid 1px;
+    width: 90%;
+    max-width: 640px;
+    margin: 0 auto;
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100%/3 - 20px), 1fr));
+    grid-template-rows: repeat(2, calc(181px/2));
+    background: white;
+    
+   /* height: 210px;*/
+   
+    height: 55px;
+  }
+  
+
+
+
+  @media screen and (max-width: 768px) {
+    .info {
+      grid-template-columns: repeat(auto-fit, minmax(calc(100%/2 - 20px), 1fr));
+      grid-template-rows: repeat(4, calc(181px/4));
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .info {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, calc(181px/6));
+    }
+  }
+
+.temperatura,
+.humidade,
+.descriTemperatura,
+.velocidadeVento,
+.dayWeew,
+.contry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+
+
+
+.conteinerLoader{
+  height: 23%;
+  width: 50%;
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e8fa8;
+  border-radius: 5px;
+
+  display: none;
+}
+
+/*Loader*/
+.c-loader {
+  animation: is-rotating 1s infinite ;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
