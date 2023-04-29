@@ -1,48 +1,14 @@
-# Clima-tempo
+<h1>Projeto de Busca de Dados de Clima com MongoDB, Mongoose, Express e Bootstrap</h1>
 
+<p>O meu projeto de busca de dados de clima é uma ferramenta online que permite que os usuários pesquisem informações sobre o clima em diferentes partes do mundo. Com essa aplicação, os usuários podem inserir o nome da cidade, estado ou país que desejam obter informações meteorológicas e visualizar resultados precisos e atualizados.</p>
 
-<p>
-    Este projeto é uma busca de dados do tempo da cidade na qual você <br>
-    insirir, tem controle de Login, conexão ao banco NoSQl Mongo e criptografia de senha <br>
-    Tratamento de erro de solicitação a API e de conexão com a internet. <br>
+<p>Para tornar isso possível, o meu projeto utiliza conexão com o banco de dados MongoDB e pacotes importantes como o Mongoose e o Express, que ajudam a garantir que a aplicação seja rápida, confiável e fácil de usar. Além disso, o Bootstrap é usado para garantir um design moderno e atraente.</p>
 
-    Também a cadastro com o Google !
-</p>
+<p>Para tornar a experiência do usuário ainda melhor, utilizei outras ferramentas, como o Freepik e o wevideo.com. Essas ferramentas me permitiram criar um visual atraente e dinâmico para a aplicação.</p>
 
+<p>Por fim, para buscar dados precisos de clima em diferentes regiões do mundo, utilizei as APIs OpenCage Geocoder API e Openweathermap. Essas APIs permitem que eu forneça informações meteorológicas precisas e atualizadas para os usuários em tempo real.</p>
 
-<div>
-    <h3>Pacotes npm utilizados</h3>
-    <ul>
-        <li>mongoose</li>
-    </ul>
-</div>
-<br>
-<div>
-    <h3>Fremeowrks</h3>
-    <ul>
-        <li>Bootstrap</li>
-        <li>Express</li>
-    </ul>
-</div>
-
-<div>
-    <h3>Ferramenta(s) utilizada(s)</h3>
-    <ul>
-        <li>Freepik</li>
-        <li>Editor de video wevideo.com</li>
-    </ul>
-</div>
-
-<div>
-    <h3>APIs</h3>
-    <ul>
-        <li>OpenCage Geocoder API</li>
-        <li>Openweathermap</li>
-    </ul>
-</div>
-
-
-<p>O foco do projeto, não é o front-end e sim seu Back!</p>
+<p>Em resumo, o meu projeto de busca de dados de clima é uma ferramenta poderosa e fácil de usar que permite que os usuários obtenham informações precisas sobre o clima em diferentes partes do mundo. Com uma combinação inteligente de tecnologia, design e recursos de pesquisa, esta aplicação é uma escolha excelente para qualquer pessoa que deseja se manter atualizado sobre o clima em qualquer lugar do mundo.</p>
 
 # Projeto ainda nao finalizado !!
 
