@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
+    <!--icon-->
+    <link rel="shortcut icon" href="../img/faviicon.png" type="image">
     <title>Clima</title>
 </head>
+
+<?php
+
+include('../controller/getSessino.php');
+
+?>
 <body>
     <header>
         <nav>
-            <h2>Hello, name user</h2>
+            <h2>Hello, <?php echo $_SESSION['nome'] ?></h2>
             
             <div class="time">
                 <span id="hrs">00</span>
@@ -23,7 +31,7 @@
             
             <div class="user">
                 <img src="../img/user.png" alt="icon-user">
-                <a href="">Exit</a>
+                <a href="../controller/endSession.php">Exit</a>
             </div>
         </nav>
     </header>
@@ -31,7 +39,7 @@
     <section class="main">
     
         <form>
-             <input type="text" placeholder="City" name="cidade" id="cidade">
+             <input type="text" placeholder="City" name="cidade" id="cidade" >
              <input type="text" placeholder="State" name="estado" id="estado">
              <input type="text" placeholder="Country" name="pais" id="pais">
 

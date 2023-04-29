@@ -13,7 +13,8 @@ let vento               = document.getElementById('velocidadeVento');
 let dayWeek             = document.getElementById('week');
 let pais_Origem         = document.getElementById('country')
 
-let loader              = document.getElementById('conteinerLoader') 
+let loader              = document.getElementById('conteinerLoader');
+ 
 document.getElementById('Btn').addEventListener('click', ()=>{
     if(city.value == "" && state.value == "" && country.value == ""){
         const Toast = Swal.mixin({
@@ -65,21 +66,6 @@ document.getElementById('Btn').addEventListener('click', ()=>{
 
     });
 
-    setTimeout(function(){
-        conteinerInfo.style.height      = '55px';
-        conteinerInfo.style.transition  = '0.5s'
-    
-        ArrayElement.forEach((elemento)=>{
-            elemento.style.display = 'none'
-    
-        });
-
-    },1000*40);
-    
-    
-    
-    
-    
     
    let returnOfArray = Rename_space(city.value, state.value, country.value);
 
@@ -164,7 +150,9 @@ async function getData(cidade, estado, pais){
         .then((data) => {
           lat  = data.results[0]['geometry'].lat;
           long = data.results[0]['geometry'].lng;
+          console.log(data);
         });
+        
   
   
         /*Por a latitude e longitude no link*/
@@ -181,7 +169,7 @@ async function getData(cidade, estado, pais){
           vento.textContent                = data.wind.speed + "m/s"
           dayWeek.textContent              = getDayWeek()
           pais_Origem.textContent          = data.sys.country;
-  
+          console.log(data);
         });
 
         loader.style.display = 'none';
@@ -228,3 +216,17 @@ function getDayWeek(){
     return wekk[data.getDay()]
 }
 
+//Quando o mause sair do element HTMl
+conteinerInfo.addEventListener('mouseout', ()=>{
+  setTimeout(function(){
+    conteinerInfo.style.height      = '55px';
+    conteinerInfo.style.transition  = '0.5s'
+
+    ArrayElement.forEach((elemento)=>{
+        elemento.style.display = 'none'
+
+    });
+
+},1000*30);
+
+});

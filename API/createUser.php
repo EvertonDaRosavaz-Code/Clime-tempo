@@ -2,8 +2,8 @@
 
 $Getnome          = $_GET['nome'];
 $Getemail         = $_GET['email'];
-
 $Getsenha         = $_GET['senha'];
+
 $GetconfirmSenha  = $_GET['confirmSenha'];
 
 if(empty($Getsenha) && empty($GetconfirmSenha)){
@@ -13,8 +13,10 @@ if(empty($Getsenha) && empty($GetconfirmSenha)){
 
 
 function createUserMongo($nome, $email, $senha){
-    $curl = curl_init();
+  
 
+  $curl = curl_init();
+  
   curl_setopt_array($curl, [
     CURLOPT_PORT => "4001",
     CURLOPT_URL => "http://localhost:4001/",
@@ -33,16 +35,18 @@ function createUserMongo($nome, $email, $senha){
       "Content-Type: application/json"
     ],
   ]);
-
+  
   $response = curl_exec($curl);
   $err = curl_error($curl);
-
+  
   curl_close($curl);
-
+  
   if ($err) {
     echo "cURL Error #:" . $err;
-  } else {
-    header('location: ../controller/newSession.php?nome='.$_GET['nome']);
+  } 
+  
+  else {
+    header('location:../controller/newSession.php?nome='.$Getnome);
   }
 }
 

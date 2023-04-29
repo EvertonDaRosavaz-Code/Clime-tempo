@@ -18,15 +18,6 @@
             header('location: ./API/createUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha'].'&confirmSenha='.$_POST['Confimsenha'] );            
         }
 
-        if(isset($_GET['googlenome']) && isset($_GET['googleemail'])){
-            $nomeGoogle  = $_GET['googlenome'];
-            $emailGoogle = $_GET['googleemail']; 
-            
-            echo "<script>alert('Só nos confirme uma senha, por segurança')</script>";
-        }
-       
-
-   
     ?>
 
     <body>
@@ -37,43 +28,42 @@
            </video>
 
             <form class=formLogin method="post" >
-                <h3>Create acoont </h3>
+                <h3>Create acoont</h3>
 
                 <div class="conteiner-iconUser">
                    <img src="img/user.png" alt="icon-user">
                 </div>
                 <hr>
                 <label for="nome">Name</label>
-                <input  type="text" required placeholder="Your name " id="nome" name="nome" value="<?php echo $nomeGoogle ?? '' ?>">
+                <input  type="text" required placeholder="Your name" id="nome" name="nome" value="<?php echo $nomeGoogle ?? '' ?>">
                 
                 <label for="email">Email</label>
-                <input type="email" placeholder="Your best Email" name="email" id="email" value=" <?php echo $emailGoogle ?? ''  ?>">
+                <input type="email" autocomplete="username" placeholder="Your best Email" name="email" id="email" value=" <?php echo $emailGoogle ?? ''  ?>">
                 
                 <label for="senha">Password</label>
-                <input type="password" placeholder="Password"  required id="senha" name="senha">
+                <input type="password" placeholder="Password" autocomplete="new-password"  required id="senha" name="senha">
 
                 <label for="senha">Confirm Password</label>
-                <input type="password" placeholder="Confirm Password"  required id="Confirmsenha" name="Confimsenha">
+                <input type="password" placeholder="Confirm Password" autocomplete="new-password"  required id="Confirmsenha" name="Confimsenha">
                 
                 <a href="views/login.php">Login</a>
                 <input type="submit" value="Register" id = "inBtn" name="submit">
-                <div id="buttonDiv"></div> 
             </form>
         </div>
-        <script src="js/google.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
-            let senha = document.getElementById('senha');
-            let confirmSenha = document.getElementById('Confirmsenha');
+            //Script para verificar se as senhas corresponder
+            let senha           = document.getElementById('senha');
+            let confirmSenha    = document.getElementById('Confirmsenha');
 
             document.getElementById('inBtn').addEventListener('click', ()=>{
                 if(senha.value != confirmSenha.value){
-                   alert('As senhas não correspondem');
+                    alert('Passowrd do not macht');
                 }
             });
 
         </script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     </body>
    
 </html>

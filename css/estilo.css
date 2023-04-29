@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     gap: 5px;
     
-    background: #1ABF9C;
+    background: #05cd8d;
 }
 
 
@@ -63,6 +63,10 @@ header {
     
   }
 
+  .user a{
+    text-decoration: none;
+    color: black;
+  }
 
 @media screen and (max-width: 768px) {
     header {
@@ -209,6 +213,9 @@ header {
     }
   }
 
+h2{
+  white-space: pre ;
+}
 .temperatura,
 .humidade,
 .descriTemperatura,
@@ -222,18 +229,16 @@ header {
     display: none;
 }
 
-
-
-
 .conteinerLoader{
-  height: 23%;
-  width: 50%;
+ 
   position: fixed;
   z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0e8fa8;
+  background: rgb(12, 82, 162);
+  height: 210px;
+  width: 640px;
   border-radius: 5px;
 
   display: none;
@@ -242,9 +247,9 @@ header {
 /*Loader*/
 .c-loader {
   animation: is-rotating 1s infinite ;
-  border: 6px solid #e5e5e5;
+  border: 6px solid #0999cd;
   border-radius: 50%;
-  border-top-color: #51d4db;
+  border-top-color: #ffffff;
   height: 50px;
   width: 50px;
 }

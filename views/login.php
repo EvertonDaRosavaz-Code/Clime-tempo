@@ -14,7 +14,15 @@
         <title>Login-in</title>
         
     </head>
+    <?php
+        if(isset($_POST['submit'])){
+            header('location: ../API/consultUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha']);            
+        }
 
+       
+        
+        
+    ?>
 
     <body>
 
@@ -32,16 +40,13 @@
 
                 <hr>
                 <label for="nome">Name</label>
-                <input type="text" required placeholder="Your name " id="nome"
-                    name="nome">
+                <input type="text" required placeholder="Your name " id="nome" name="nome">
 
                 <label for="email">Email</label>
-                <input type="email" required placeholder="Your best Email"
-                    name="email" id="email">
+                <input type="email" required placeholder="Your best Email" name="email" id="email" autocomplete="username">
 
                 <label for="senha">Password</label>
-                <input type="password" placeholder="Password" required
-                    id="senha" name="senha">
+                <input type="password" placeholder="Password" required id="senha" name="senha" autocomplete="new-password"> 
 
                 <div class="social-media">
 

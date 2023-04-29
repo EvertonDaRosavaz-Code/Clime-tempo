@@ -26,14 +26,10 @@ body {
   video {
     object-fit: cover;
     opacity: 0.7;
-    filter: blur(10px);
     width: 100%;
     height: 100%;
   }
-
- 
-
-
+  
 .formLogin {
     position: absolute;
     top: 50%;
