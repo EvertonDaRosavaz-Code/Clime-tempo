@@ -12,16 +12,13 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
         <title>Login-in</title>
-        
     </head>
     <?php
         if(isset($_POST['submit'])){
             header('location: ../API/consultUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha']);            
-        }
-
+        }   
+    
        
-        
-        
     ?>
 
     <body>
@@ -60,6 +57,7 @@
                 
             </form>
         </div>
-       
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/getURLParams.js"></script>
     </body>
 </html>
