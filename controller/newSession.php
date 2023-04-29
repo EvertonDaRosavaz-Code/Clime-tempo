@@ -8,6 +8,7 @@ if(!isset($_SESSION)){
     $_SESSION['nome'] = $nome;
     header('location:../views/clima.php');
     
+  
 }
 
 

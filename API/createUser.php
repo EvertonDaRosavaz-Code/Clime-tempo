@@ -46,7 +46,10 @@ function createUserMongo($nome, $email, $senha){
   } 
   
   else {
-    header('location:../controller/newSession.php?nome='.$Getnome);
+    if($response == 404){
+      header('location: ../?q=erroremail&nome='.$nome.'&senha='.$senha);
+    }
+    header('location:../controller/newSession.php?nome='.$nome);
   }
 }
 

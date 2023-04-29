@@ -64,7 +64,7 @@ switch (myParam){
     case 'senha incorreta':
         Toast.fire({
             icon: 'error',
-            title: 'Email incorreto'
+            title: 'Senha incorreta'
         });
 
         password.style.borderColor = 'red';

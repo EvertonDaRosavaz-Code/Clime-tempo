@@ -51,18 +51,7 @@
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script>
-            //Script para verificar se as senhas corresponder
-            let senha           = document.getElementById('senha');
-            let confirmSenha    = document.getElementById('Confirmsenha');
-
-            document.getElementById('inBtn').addEventListener('click', ()=>{
-                if(senha.value != confirmSenha.value){
-                    alert('Passowrd do not macht');
-                }
-            });
-
-        </script>
+        <script src="js/createAcoont.js" ></script>
     
     </body>
    
