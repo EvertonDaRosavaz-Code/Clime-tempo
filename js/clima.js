@@ -140,7 +140,7 @@ let long;
 
 async function getData(cidade, estado, pais){
     /*Retornar lat e lon da cidade*/
-    const keyOpencage = '9ef8d7fe0dc344b0aad272ca282e0396'
+    const keyOpencage = ''
     const linkOpencage = `https://api.opencagedata.com/geocode/v1/json?q=${cidade}%2C+${estado}%2C+${pais}&key=${keyOpencage}`;
     
 
@@ -156,7 +156,7 @@ async function getData(cidade, estado, pais){
   
   
         /*Por a latitude e longitude no link*/
-        const keyOpenWheter = '64e186beae52ae51be63f0866a18b787';
+        const keyOpenWheter = '';
         const linkOpenWheter = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${keyOpenWheter}`
   
         await fetch(linkOpenWheter)
