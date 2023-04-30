@@ -13,6 +13,4 @@
 <p>Em resumo, o meu projeto de busca de dados de clima é uma ferramenta poderosa e fácil de usar que permite que os usuários obtenham informações precisas sobre o clima em diferentes partes do mundo. Com uma combinação inteligente de tecnologia, design e recursos de pesquisa, esta aplicação é uma escolha excelente para qualquer pessoa que deseja se manter atualizado sobre o clima em qualquer lugar do mundo.</p>
 
 
-# Projeto ainda não finalizado !!
-
 
