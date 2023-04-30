@@ -4,7 +4,7 @@
 
 <p>Para tornar isso possível, o meu projeto utiliza conexão com o banco de dados MongoDB e pacotes importantes como o Mongoose e o Express, que ajudam a garantir que a aplicação seja rápida, confiável e fácil de usar. Além disso, o Bootstrap é usado para garantir um design moderno e atraente.</p>
 
-<p>Os usuários também têm a opção de fazer login na aplicação ou fazer cadastro com o Google, para tornar o processo ainda mais fácil e rápido. E para fornecer uma experiência de usuário ainda mais agradável, utilizei o SweetAlert2, que adiciona caixas de diálogo e alertas personalizados para a aplicação.</p>
+<p>E para fornecer uma experiência de usuário ainda mais agradável, utilizei o SweetAlert2, que adiciona caixas de diálogo e alertas personalizados para a aplicação.</p>
 
 <p>Para tornar a experiência do usuário ainda melhor, utilizei outras ferramentas, como o Freepik e o wevideo.com. Essas ferramentas me permitiram criar um visual atraente e dinâmico para a aplicação.</p>
 

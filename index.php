@@ -9,7 +9,6 @@
         <!--CSS-->
         <link rel="stylesheet" href="css/index.css">
         <title>Login-in</title>
-        <script src="https://accounts.google.com/gsi/client" async defer></script>
         <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     </head>
    
@@ -17,7 +16,6 @@
         if(isset($_POST['submit'])){
             header('location: ./API/createUser.php?nome='.$_POST['nome'].'&email='.$_POST['email'].'&senha='.$_POST['senha'].'&confirmSenha='.$_POST['Confimsenha'] );            
         }
-
     ?>
 
     <body>
@@ -48,11 +46,17 @@
                 
                 <a href="views/login.php">Login</a>
                 <input type="submit" value="Register" id = "inBtn" name="submit">
+                
+              
             </form>
+            <div class="google" id="BtnGoogle">
+                <div id="buttonDiv"></div> 
+            </div>
+            
         </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/createAcoont.js" ></script>
-    
+     
     </body>
    
 </html>

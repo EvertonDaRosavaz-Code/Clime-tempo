@@ -35,11 +35,6 @@ let nomeParams = url.get('nome');
 let senhaParams = url.get('senha');
 
 
-
-
-
-
-
 if(Myparams == 'erroremail'){
     const Toast = Swal.mixin({
         toast: true,
@@ -63,5 +58,3 @@ if(Myparams == 'erroremail'){
     senha.value = senhaParams;
     confirmSenha.value = senhaParams;
 }
-
- 
