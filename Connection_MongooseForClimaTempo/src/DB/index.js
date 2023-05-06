@@ -1,5 +1,5 @@
 const mongoo = require('mongoose');
-const key = `98057640fbo`;
+const key = ``;
 const DB = 'Cadastro-User-Clima';
 const ulr = `mongodb+srv://evertontidarosavaz:${key}@cluster0.zxni5sm.mongodb.net/${DB}`;
 
