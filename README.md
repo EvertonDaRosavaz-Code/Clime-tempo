@@ -14,3 +14,4 @@
 
 
 
+As chaves usadas nas APIs e no mongo não sâo demonstradas por seguraça própoa
